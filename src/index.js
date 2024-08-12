@@ -9,7 +9,7 @@ connectDB()
         console.log("ERR:", error);
     });
     app.listen(process.env.PORT || 8000, () => {
-        console.log("App is listening")
+        console.log("App is listening",process.env.PORT)
     });
 })
 .catch((err) => {
